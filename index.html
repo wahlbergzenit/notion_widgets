@@ -1,1 +1,17 @@
-hello world
+<!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3DpGQWVBDJ7q992O8UCdA5s_-TUi-mlmpzqOAfFQGZiobqh6NCuS9z46Y-gFVFsWkgAubkcrQN?gv=true',
+      color: '#EF6C00',
+      label: 'Book an appointment',
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
